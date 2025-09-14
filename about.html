@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Salvation Ministries, Inc. — About Us</title>
+  <style>
+    /* Base */
+    * { box-sizing: border-box }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:#222; background:#fff }
+    header { background:#234b87; color:#fff; padding:28px 16px 12px; text-align:center }
+    header h1 { margin:0 0 8px; font-weight:700; letter-spacing:.5px; font-size:2rem }
+    nav a { display:inline-block; margin:0 10px; padding:8px 6px; color:#fff; text-decoration:none; border-bottom:2px solid transparent; font-weight:600; font-size:1.1rem }
+    nav a:hover, nav a.active { border-color:#fff }
+    .container { max-width:1080px; margin:28px auto; padding:0 16px }
+    .lead { font-size:1.25rem; line-height:1.8 }
+    .grid { display:grid; gap:28px; grid-template-columns:1fr; align-items:center }
+    .center { text-align:center }
+    @media (max-width:800px){ .grid{ grid-template-columns:1fr } }
+    footer { text-align:center; color:#666; font-size:1rem; padding:28px 16px }
+
+    /* Slideshow shell kept for JS compatibility, but hidden here */
+    .slideshow { display:none }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>New Salvation Ministries, Inc.</h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="donate.html">DONATE</a>
+      <a href="services.html">SERVICES</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="about.html" class="active">ABOUT&nbsp;US</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <div>
+        <p class="lead">
+          New Salvation Ministries started about December 2000 at the North County Correctional Facility (Super Max).
+          I was called by God in accordance to <strong>2 Timothy 4:1-5</strong>.
+        </p>
+        <p class="lead">
+          God called me to preach and teach my fellow inmates. <strong>Isaiah 43:18-19</strong> says,
+          “Remember not the former things of old, for behold, I will do a new thing and now it shall spring forth.
+          Shall you not know it?”
+        </p>
+        <p class="lead">
+          New Salvation Ministries is the new salvation Jesus provided to all who will call upon His name.
+          Ministry is what God called us to do as professing Christians according to <strong>Matthew 28:19</strong>
+          — to fulfill the Great Commission.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ✅ Single-line footer, exactly like other pages -->
+  <footer>
+    We are also a GRASS ROOTS, END TIMES — FRONT LINE MINISTRY. • New Salvation Ministries, Inc. © 2025
+  </footer>
+
+  <script>
+    // JS scaffold kept for uniformity across site
+    (function(){
+      const hero = document.getElementById('hero');
+      if(!hero) return;
+      const slidesWrap = hero.querySelector('.slides');
+      const slides = hero.querySelectorAll('.slide');
+      let i = 0;
+      function show(n) {
+        slidesWrap.style.transform = `translateX(-${n * 100}%)`;
+      }
+      show(0);
+      setInterval(() => {
+        i = (i + 1) % slides.length;
+        show(i);
+      }, 5000);
+    })();
+  </script>
+</body>
+</html>
+
+
+

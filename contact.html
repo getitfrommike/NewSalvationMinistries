@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Salvation Ministries, Inc. — Contact</title>
+  <style>
+    /* Base */
+    * { box-sizing: border-box }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:#222; background:#fff }
+    header { background:#234b87; color:#fff; padding:28px 16px 12px; text-align:center }
+    header h1 { margin:0 0 8px; font-weight:700; letter-spacing:.5px; font-size:2rem }
+    nav a { display:inline-block; margin:0 10px; padding:8px 6px; color:#fff; text-decoration:none; border-bottom:2px solid transparent; font-weight:600; font-size:1.1rem }
+    nav a:hover, nav a.active { border-color:#fff }
+    .container { max-width:1080px; margin:28px auto; padding:0 16px }
+    .lead { font-size:1.25rem; line-height:1.8 }
+    .grid { display:grid; gap:28px; grid-template-columns:1fr 1fr; align-items:center }
+    .center { text-align:center }
+    img.card { max-width:520px; width:100%; height:auto; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,.2) }
+    @media (max-width:800px){ .grid{ grid-template-columns:1fr } }
+    footer { text-align:center; color:#666; font-size:1rem; padding:28px 16px }
+    img.cashapp-btn { max-width:300px; width:100%; height:auto; border:6px solid #0b0; border-radius:14px; box-shadow:0 8px 24px rgba(0,0,0,.2); transition:transform .2s ease }
+    img.cashapp-btn:hover { transform:scale(1.05) }
+    /* Slideshow shell kept for JS compatibility, but hidden here */
+    .slideshow { display:none }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>New Salvation Ministries, Inc.</h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="donate.html">DONATE</a>
+      <a href="services.html">SERVICES</a>
+      <a href="contact.html" class="active">CONTACT</a>
+      <a href="about.html">ABOUT&nbsp;US</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <div>
+        <h2 style="margin-bottom:12px">Contact</h2>
+        <p class="lead">
+          <strong>New Salvation Ministries, Inc.</strong><br>
+          45336 Rodin Ave.<br>
+          Lancaster, CA 93535
+        </p>
+        <p class="lead"><strong>Telephone:</strong> (310) 590-5762</p>
+        <p class="lead">Thank you, sincerely.</p>
+        <p class="lead">
+          <strong>Gerald Fortier</strong><br>
+          CEO and Founder
+        </p>
+        <div class="center" style="margin-top:24px">
+          <a href="https://cash.app/$NSMINC" title="Cash App" target="_blank" rel="noopener noreferrer">
+            <img src="images/cashapp.png" alt="Donate via Cash App" class="cashapp-btn">
+          </a>
+        </div>
+      </div>
+      <div class="center">
+        <img class="card" src="images/contact.jpg" alt="Contact">
+      </div>
+    </div>
+  </main>
+
+  <footer>New Salvation Ministries, Inc. © 2025</footer>
+
+  <script>
+    // JS scaffold kept for uniformity across site
+    (function(){
+      const hero = document.getElementById('hero');
+      if(!hero) return;
+      const slidesWrap = hero.querySelector('.slides');
+      const slides = hero.querySelectorAll('.slide');
+      let i = 0;
+      function show(n) {
+        slidesWrap.style.transform = `translateX(-${n * 100}%)`;
+      }
+      show(0);
+      setInterval(() => {
+        i = (i + 1) % slides.length;
+        show(i);
+      }, 5000);
+    })();
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Salvation Ministries, Inc. — Home</title>
+  <style>
+    /* Base */
+    * { box-sizing: border-box }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:#222; background:#fff }
+    header { background:#234b87; color:#fff; padding:28px 16px 12px; text-align:center }
+    header h1 { margin:0 0 8px; font-weight:700; letter-spacing:.5px; font-size:2rem }
+    nav a { display:inline-block; margin:0 10px; padding:8px 6px; color:#fff; text-decoration:none; border-bottom:2px solid transparent; font-weight:600; font-size:1.1rem }
+    nav a:hover, nav a.active { border-color:#fff }
+    .container { max-width:1080px; margin:28px auto; padding:0 16px }
+    .lead { font-size:1.25rem; line-height:1.8 }
+    .center { text-align:center }
+    .btn { display:inline-block; padding:14px 22px; border:2px solid #234b87; text-decoration:none; color:#234b87; font-weight:700; border-radius:10px; font-size:1.1rem }
+    .btn:hover { background:#234b87; color:#fff }
+    footer { text-align:center; color:#666; font-size:1rem; padding:28px 16px }
+
+    /* Slideshow carousel */
+    .slideshow {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background: #000;
+    }
+    .slides {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      transition: transform 0.9s ease;
+    }
+    .slide {
+      flex: 0 0 80%; /* each slide takes 80% of width */
+      margin: 0 10px;
+      height: 90%;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 8px 24px rgba(0,0,0,.3);
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .slide-caption {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      padding: 20px;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0, rgba(0,0,0,.55) 100%);
+      color: #fff; font-weight: 700; font-size: 1.5rem;
+      text-shadow: 0 2px 4px rgba(0,0,0,.7);
+    }
+
+    @media (max-width:800px) {
+      .slide { flex: 0 0 90%; height: 70% }
+      .lead { font-size:1.1rem }
+      .slide-caption { font-size:1.2rem }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>New Salvation Ministries, Inc.</h1>
+    <nav>
+      <a href="index.html" class="active">HOME</a>
+      <a href="donate.html">DONATE</a>
+      <a href="services.html">SERVICES</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="about.html">ABOUT&nbsp;US</a>
+    </nav>
+  </header>
+
+  <!-- HERO FULL-SCREEN SLIDESHOW -->
+  <div class="slideshow" id="hero">
+    <div class="slides">
+      <div class="slide">
+        <img src="images/home1.jpg" alt="Urban Street Church — Serving Skid Row">
+        <div class="slide-caption">Urban Street Church — Serving Skid Row</div>
+      </div>
+      <div class="slide">
+        <img src="images/home2.jpg" alt="Faith. Love. Service.">
+        <div class="slide-caption">Faith. Love. Service.</div>
+      </div>
+      <div class="slide">
+        <img src="images/home3.jpg" alt="Community Outreach">
+        <div class="slide-caption">Community Outreach</div>
+      </div>
+      <div class="slide">
+        <img src="images/home4.jpg" alt="Hope &amp; Transformation">
+        <div class="slide-caption">Hope &amp; Transformation</div>
+      </div>
+      <div class="slide">
+        <img src="images/home5.jpg" alt="Grace for Skid Row">
+        <div class="slide-caption">Grace for Skid Row</div>
+      </div>
+      <div class="slide">
+        <img src="images/home6.jpg" alt="Hands That Heal, Hearts That Care">
+        <div class="slide-caption">Hands That Heal, Hearts That Care</div>
+      </div>
+      <div class="slide">
+        <img src="images/home7.jpg" alt="Feeding the Body &amp; Spirit">
+        <div class="slide-caption">Feeding the Body &amp; Spirit</div>
+      </div>
+      <div class="slide">
+        <img src="images/home8.jpg" alt="Love Without Walls">
+        <div class="slide-caption">Love Without Walls</div>
+      </div>
+      <div class="slide">
+        <img src="images/home9.jpg" alt="Strength Through Community">
+        <div class="slide-caption">Strength Through Community</div>
+      </div>
+      <div class="slide">
+        <img src="images/home10.jpg" alt="Where Hope Finds a Home">
+        <div class="slide-caption">Where Hope Finds a Home</div>
+      </div>
+      <div class="slide">
+        <img src="images/home11.jpg" alt="Breaking Chains, Building Futures">
+        <div class="slide-caption">Breaking Chains, Building Futures</div>
+      </div>
+      <div class="slide">
+        <img src="images/home12.jpg" alt="A Place of Refuge">
+        <div class="slide-caption">A Place of Refuge</div>
+      </div>
+      <div class="slide">
+        <img src="images/home13.jpg" alt="Every Soul Matters">
+        <div class="slide-caption">Every Soul Matters</div>
+      </div>
+      <div class="slide">
+        <img src="images/home14.jpg" alt="God’s Love in Action">
+        <div class="slide-caption">God’s Love in Action</div>
+      </div>
+      <div class="slide">
+        <img src="images/home15.jpg" alt="Street Ministry, Kingdom Vision">
+        <div class="slide-caption">Street Ministry, Kingdom Vision</div>
+      </div>
+      <div class="slide">
+        <img src="images/home16.jpg" alt="New Life, New Beginnings">
+        <div class="slide-caption">New Life, New Beginnings</div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section>
+      <p class="lead">
+        As we face the uncertain future of this world, <strong>New Salvation Ministries, Inc.</strong> is committed to operating at the center of <strong>God's will</strong>, which is His Word.
+      </p>
+      <p class="lead">
+        Do you know what I believe is the icing on the cake of obedience—the most compelling reason for choosing to obey God? It is this: <strong>Obedience leads to a powerful, confident life.</strong> When you allow yourself to be led by God through the unexpected, you gain confidence from knowing you are exactly where God wants you to be.
+      </p>
+      <p class="lead">
+        You won’t find yourself doubting the circumstances in your life or the direction things are going. Instead, you’ll have inner peace and joy that comes from knowing you are at the center of God’s will!
+      </p>
+
+      <div class="center" style="margin:24px 0">
+        <img src="images/prayer.jpg" alt="Prayer" style="max-width:300px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.25)">
+      </div>
+
+      <p class="lead center"><strong>PRAYER:</strong><br>
+        Lord, thank You for leading me to the center of Your will.  
+        Help me to see Your hand in everything that comes my way as I follow You today.  
+        In Jesus’ name, Amen.
+      </p>
+
+      <p class="lead center"><strong>QUOTE:</strong> Remember! JESUS was homeless…</p>
+
+      <p class="lead center">
+        We are also a <strong>GRASS ROOTS, END TIME — FRONT LINE MINISTRY.</strong>
+      </p>
+
+      <div class="center" style="margin-top:20px">
+        <a class="btn" href="donate.html">Support the Mission</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>New Salvation Ministries, Inc. © 2025</footer>
+
+  <script>
+    (function(){
+      const hero = document.getElementById('hero');
+      const slidesWrap = hero.querySelector('.slides');
+      const slides = hero.querySelectorAll('.slide');
+      let i = 0;
+
+      function show(n) {
+        const slideWidth = slides[0].getBoundingClientRect().width + 20; // slide + margin
+        const offset = (hero.clientWidth - slideWidth) / 2;
+        slidesWrap.style.transform = `translateX(${-n * slideWidth + offset}px)`;
+      }
+
+      show(0);
+      setInterval(() => {
+        i = (i + 1) % slides.length;
+        show(i);
+      }, 5000);
+
+      window.addEventListener('resize', () => show(i)); // keep centered on resize
+    })();
+  </script>
+</body>
+</html>
+
+

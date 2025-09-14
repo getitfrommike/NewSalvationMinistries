@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Salvation Ministries, Inc. — Donate</title>
+  <style>
+    /* Base */
+    * { box-sizing: border-box }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:#222; background:#fff }
+    header { background:#234b87; color:#fff; padding:28px 16px 12px; text-align:center }
+    header h1 { margin:0 0 8px; font-weight:700; letter-spacing:.5px; font-size:2rem }
+    nav a { display:inline-block; margin:0 10px; padding:8px 6px; color:#fff; text-decoration:none; border-bottom:2px solid transparent; font-weight:600; font-size:1.1rem }
+    nav a:hover, nav a.active { border-color:#fff }
+    .container { max-width:1080px; margin:28px auto; padding:0 16px }
+    .lead { font-size:1.25rem; line-height:1.8 }
+    .center { text-align:center }
+    .btn { display:inline-block; padding:14px 22px; border:2px solid #234b87; text-decoration:none; color:#234b87; font-weight:700; border-radius:10px; font-size:1.1rem }
+    .btn:hover { background:#234b87; color:#fff }
+    footer { text-align:center; color:#666; font-size:1rem; padding:28px 16px }
+
+    /* Slideshow shell kept for JS compatibility, but hidden here */
+    .slideshow { display:none }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>New Salvation Ministries, Inc.</h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="donate.html" class="active">DONATE</a>
+      <a href="services.html">SERVICES</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="about.html">ABOUT&nbsp;US</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <p class="lead">
+      Luke 6:38 says, <strong>“Give and it shall be given unto you; good measure, pressed down and shaken together, and running over,
+      shall men give unto your bosom.”</strong>
+    </p>
+
+    <p class="lead">
+      Your generous gift to New Salvation Ministries, Inc. provides the urgent needs of the residents of Skid Row and also the metropolitan L.A. area.
+    </p>
+
+    <ul class="lead">
+      <li>1st — The Gospel or Good News of Jesus</li>
+      <li>2nd — A warm embrace</li>
+      <li>3rd — Bible, clothing, shoes, a hot lunch. Salvation.</li>
+    </ul>
+
+    <div class="center" style="margin:24px 0">
+      <p class="lead">Please use the <strong>CASH APP</strong> button for donations.</p>
+      <a href="https://cash.app/$NSMINC" title="Cash App" target="_blank" rel="noopener noreferrer">
+        <img src="images/cashapp.png" alt="CashApp" style="max-width:300px;width:100%;height:auto;border:6px solid #0b0;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.2)" />
+      </a>
+    </div>
+
+    <p class="lead center">
+      We are also a <strong>GRASS ROOTS, END TIME — FRONT LINE MINISTRY.</strong>
+    </p>
+  </main>
+
+  <footer>New Salvation Ministries, Inc. © 2025</footer>
+
+  <script>
+    // JS kept consistent with index.html (safe if reused across all pages)
+    (function(){
+      const hero = document.getElementById('hero');
+      if(!hero) return;
+      const slidesWrap = hero.querySelector('.slides');
+      const slides = hero.querySelectorAll('.slide');
+      let i = 0;
+      function show(n) {
+        slidesWrap.style.transform = `translateX(-${n * 100}%)`;
+      }
+      show(0);
+      setInterval(() => {
+        i = (i + 1) % slides.length;
+        show(i);
+      }, 5000);
+    })();
+  </script>
+</body>
+</html>
+

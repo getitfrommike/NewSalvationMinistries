@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Salvation Ministries, Inc. — Services</title>
+  <style>
+    /* Base */
+    * { box-sizing: border-box }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:#222; background:#fff }
+    header { background:#234b87; color:#fff; padding:28px 16px 12px; text-align:center }
+    header h1 { margin:0 0 8px; font-weight:700; letter-spacing:.5px; font-size:2rem }
+    nav a { display:inline-block; margin:0 10px; padding:8px 6px; color:#fff; text-decoration:none; border-bottom:2px solid transparent; font-weight:600; font-size:1.1rem }
+    nav a:hover, nav a.active { border-color:#fff }
+    .container { max-width:1080px; margin:28px auto; padding:0 16px }
+    .lead { font-size:1.25rem; line-height:1.8 }
+    .center { text-align:center }
+    footer { text-align:center; color:#666; font-size:1rem; padding:28px 16px }
+
+    /* Slideshow shell kept for JS compatibility, but hidden here */
+    .slideshow { display:none }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>New Salvation Ministries, Inc.</h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="donate.html">DONATE</a>
+      <a href="services.html" class="active">SERVICES</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="about.html">ABOUT&nbsp;US</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <p class="lead">
+      We at <strong>New Salvation Ministries, Inc.</strong> are called to rise to the cry of the poor and homeless.
+    </p>
+    <p class="lead">
+      Our #1 goal is to honor and reverence God for who He is — the creator and sustainer of all things.
+    </p>
+    <p class="lead">
+      God’s will <strong>MUST</strong> be done on Earth as it is in Heaven.
+    </p>
+    <p class="lead">
+      Our desire is to be a refuge of the homeless population in the metropolitan L.A. area.
+    </p>
+    <p class="lead">
+      Soon, we will be offering showers for the homeless.
+    </p>
+
+    <p class="lead">
+      <strong>Our MAIN service is:</strong><br>
+      <u>URBAN STREET CHURCH ON SKID ROW, CALIFORNIA</u> — every second Saturday on the corner of 5th and Crocker Street.  
+      We provide the Gospel of Jesus, Bibles, clothing, shoes, snacks, a hot lunch, a lot of love, and haircuts… all thanks to God our Father. Amen.
+    </p>
+
+    <p class="lead">
+      We also serve the <strong>All Tribes Sonlight Mission</strong> in Poston, Arizona.  
+      Our annual outreach takes a truckload of supplies to the Colorado River Indian Reservation — clothing, food supplies, water — every 3rd Saturday in December, right before Christmas.
+    </p>
+
+    <p class="lead center">
+      <strong>We are also a GRASS ROOTS, END TIME — FRONT LINE MINISTRY.</strong>
+    </p>
+  </main>
+
+  <footer>New Salvation Ministries, Inc. © 2025</footer>
+
+  <script>
+    // JS kept consistent with index.html (safe if reused across all pages)
+    (function(){
+      const hero = document.getElementById('hero');
+      if(!hero) return;
+      const slidesWrap = hero.querySelector('.slides');
+      const slides = hero.querySelectorAll('.slide');
+      let i = 0;
+      function show(n) {
+        slidesWrap.style.transform = `translateX(-${n * 100}%)`;
+      }
+      show(0);
+      setInterval(() => {
+        i = (i + 1) % slides.length;
+        show(i);
+      }, 5000);
+    })();
+  </script>
+</body>
+</html>
