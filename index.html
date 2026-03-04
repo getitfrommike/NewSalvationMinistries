@@ -23,8 +23,7 @@
 .slideshow {
   position: relative;
   width: 100%;
-  height: 100vh;
-  max-height: 900px;
+  height: min(90vh, 800px);
   overflow: hidden;
   background: #000;
 }
@@ -37,7 +36,7 @@
     .slide {
       flex: 0 0 80%; /* each slide takes 80% of width */
       margin: 0 10px;
-      height: 90%;
+      height: 100%;
       border-radius: 14px;
       overflow: hidden;
       position: relative;
@@ -46,9 +45,10 @@
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
+  object-position: center top;
   display: block;
+  background: #000;
 }
     .slide-caption {
       position: absolute;
